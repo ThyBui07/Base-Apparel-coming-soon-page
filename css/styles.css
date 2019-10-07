@@ -108,6 +108,12 @@ h1 > span {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  h1 {
+    letter-spacing: 20px;
+  }
+}
+
 p {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
