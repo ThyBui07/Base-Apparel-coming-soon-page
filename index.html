@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <!-- jquery -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+  <script src="basic.js"></script> -->
 </head>
+
 <body>
 
-  We're coming soon
+  <main>
+    <div class="logo">
+        <img src="images/logo.svg">
+    </div>
+    <div class="heroImage"></div>
+    <section class="heroText">
+      <h1><span>we're</span> coming soon</h1>
 
-  Hello fellow shoppers! We're currently building our new fashion store.
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
 
-  Email Address
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Thy Bui</a>.
-    </p>
-  </footer>
+      <form>
+        <input name="email" class="email" type="email" placeholder="example@gmail.com" pattern=".+@gmail.com" title="example@gmail.com" />
+        <button class="submit" type="submit" value="submit"><img src="images/icon-arrow.svg" alt="button arrow"></button>
+      </form>
+      <div class="social-icons">
+          <a href="#" class="hvr-bob"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hvr-bob"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hvr-bob"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+  <div class="desktop-heroImage"></div>
 </body>
+
 </html>

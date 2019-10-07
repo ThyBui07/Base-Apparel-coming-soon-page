@@ -1,0 +1,168 @@
+body {
+  background: linear-gradient(135deg,#FFFFFF,#FFF5F5);
+  @media screen and (min-width: 769px) {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1.5fr 1fr;
+    // //change order
+    // .heroImage {
+    //   order: 2;
+    // }
+  }
+
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 30px 0 0 40px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 80px;
+    padding-left: 100px;
+  }
+  //image element which is direct child of header
+  > img {
+    width: 120px;
+
+    @media screen and (min-width: 1024px) {
+      width: 200px;
+    }
+  }
+}
+
+.heroImage {
+  background-image: url('/images/hero-mobile.jpg');
+  height: 300px;
+  // width: 100%;
+  max-width: 1023px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 769px){
+    display: none;
+  }
+  // @media screen and (min-width: 1024px) {
+  //   background-image: url('/images/hero-desktop.jpg');
+  //   height: 103vh;
+  //   position: relative;
+  //   top: 50%;
+  //   bottom: 50%;
+  //   margin-top: -52vh;
+  //   margin-bottom: -54vh;
+  //   left: calc(-50vw + 50%);
+  // }
+}
+.desktop-heroImage {
+  @media screen and (min-width:769px) {
+    background-image: url('/images/hero-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.heroText {
+  margin-top: 30px;
+  padding: 0 40px 0 40px;
+  @media screen and (min-width: 769px) {
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-size: cover;
+    padding: 50px 200px 0 100px;
+    margin: 0;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 400;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-transform: uppercase;
+
+  > span {
+    color: $pink;
+    font-weight: 300;
+  }
+
+  @media screen and (min-width: 769px) {
+    font-size: 70px;
+    text-align: left;
+  }
+}
+
+p {
+  text-align: center;
+  font-family: $font-family;
+  font-size: 16px;
+  color: $pink;
+  font-weight: 400;
+  line-height: 2;
+
+  @media screen and (min-width: 769px) {
+    text-align: left;
+  }
+}
+
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba(65, 58, 58, 0.1);
+  border-radius: 50px;
+}
+
+input {
+  box-shadow: none;
+  flex-grow: 2;
+  border: none;
+  background: none;
+  padding-left: 15px;
+}
+
+input::placeholder {
+  color: $pink;
+  text-align: left;
+}
+
+input[type="email"]:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+// input[type="email"]:focus:hover {
+
+// }
+
+button {
+  width: 4.5rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 80px;
+  color: white;
+  font-size: 1.5rem;
+  min-width: 4.5rem;
+  min-height: 3rem;
+}
+
+.social-icons {
+  margin: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+
+  > a {
+    margin-right: 16px;
+  }
+}
+
+  i.fab {
+    border: 1px solid $pink;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: darken($color: $pink, $amount: 4);
+}

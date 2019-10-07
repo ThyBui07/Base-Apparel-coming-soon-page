@@ -1,0 +1,36 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+/* This is the style of our error messages */
+// .icon {
+//   position: absolute;
+//   right: 18%;
+//   text-align: center;
+//   color: hsl(0, 100%, 60%);
+//   font-size: 1.5rem;
+//   padding-top: 10px;
+//   display: none;
+// }
+
+// .icon-show {
+//   display: inline;
+// }
+
+// .error {
+//   // width  : 100%;
+//   // padding: 2% 5%;
+//   // color: hsl(0, 100%, 60%);
+//   /* -moz-box-sizing: border-box;
+//   box-sizing: border-box; */
+//   // display: block;
+// }
