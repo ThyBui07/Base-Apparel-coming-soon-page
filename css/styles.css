@@ -79,7 +79,7 @@ body {
 
 @media screen and (min-width: 769px) {
   .heroText {
-    background-image: url("https://raw.githubusercontent.com/ThyBui07/Base-Apparel-coming-soon-page/master/images/bg-pattern-desktop.svg");
+    background-image: url("../images/bg-pattern-desktop.svg");
     background-size: cover;
     padding: 50px 200px 0 100px;
     margin: 0;
