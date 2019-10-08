@@ -27,6 +27,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  main {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-size: cover;
+  }
+}
+
 .logo {
   max-width: 600px;
   margin-bottom: 30px;
@@ -79,8 +86,6 @@ body {
 
 @media screen and (min-width: 769px) {
   .heroText {
-    background-image: url("../images/bg-pattern-desktop.svg");
-    background-size: cover;
     padding: 50px 200px 0 100px;
     margin: 0;
   }

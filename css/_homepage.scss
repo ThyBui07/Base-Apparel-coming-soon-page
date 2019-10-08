@@ -12,6 +12,12 @@ body {
 
 }
 
+main {
+  @media screen and (min-width: 1024px) {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-size: cover;
+  }
+}
 .logo {
   max-width: 600px;
   margin-bottom: 30px;
@@ -64,8 +70,6 @@ body {
   margin-top: 30px;
   padding: 0 40px 0 40px;
   @media screen and (min-width: 769px) {
-    background-image: url("../images/bg-pattern-desktop.svg");
-    background-size: cover;
     padding: 50px 200px 0 100px;
     margin: 0;
   }
